@@ -20,11 +20,11 @@ module.exports = {
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				loader: "babel-loader",
-				query:
-				{
-					presets:['react','es2015']
-				}
+				loader: "babel-loader"
+				//query:
+				//{
+				//	presets:['react','es2015']
+				//}
 			},
 			{test: /\.less$/,loader: "style!css!less"},
 			{test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/, loader: 'url-loader?limit=1024&name=./img/[hash:8].[name].[ext]'},
