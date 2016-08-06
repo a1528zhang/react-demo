@@ -27,11 +27,11 @@ module.exports = {
 				}
 			},
 			{test: /\.less$/,loader: "style!css!less"},
-			{test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/, loader: 'url-loader?limit=1024&name=./img/[hash:8].[name].[ext]'}
-			//{ test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&mimetype=application/font-woff" },
-			//{ test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&mimetype=application/octet-stream" },
-			//{ test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: "file" },
-			//{ test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&mimetype=image/svg+xml" }
+			{test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/, loader: 'url-loader?limit=1024&name=./img/[hash:8].[name].[ext]'},
+			{ test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&mimetype=application/font-woff" },
+			{ test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&mimetype=application/octet-stream" },
+			{ test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: "file" },
+			{ test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&mimetype=image/svg+xml" }
         ]
     },
 	resolve: {
@@ -45,10 +45,7 @@ module.exports = {
 			ReactDOM:"react-dom",
 			$: "jquery",
 			jQuery: "jquery",
-			"window.jQuery": "jquery",
-			Router:"react-router",
-			Route:"react-router",
-			Link:"react-router"
+			"window.jQuery": "jquery"
 		})
 	]
 };
